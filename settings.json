@@ -1,0 +1,23 @@
+{
+    "unit": {
+        "port": 3010,
+        "server": "http://localhost:3014"
+    },
+
+
+    "server": {
+        "port": 3014,
+        "board":  "http://localhost:3011"
+    },
+
+
+    "board": {
+        "port": 3011,
+        "url": "https://google.ru"
+    },
+
+    "configurator": {
+        "port": 3001
+    }
+
+}

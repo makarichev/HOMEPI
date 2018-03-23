@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h3>Загрузка компонентов</h1>
+    <table class="table">
+        <tr ng-repeat="unit in $ctrl.units">
+            <td>{{unit.name}}</td>
+            <td>{{unit.title}}</td>
+            <td>{{unit.port}}</td>
+            <td><input type="checkbox" ng-model="unit.installed" ng-click="$ctrl.install(unit)"/></td>
+            <td>
+                <a href ng-click="$ctrl.socket.emit('start', unit)">старт</button>
+                <a href ng-click="$ctrl.socket.emit('stop', unit)">стоп</button>
+                    {{unit.started}}
+            </td>
+            <td><a href="{{$ctrl.getUnitRef(unit)}}" target="blank">настройки</a></td>
+        </tr>
+    </table>
+</div>

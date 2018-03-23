@@ -1,0 +1,5 @@
+{
+    "name": "piunit",
+    "title": "модуль управления raspberry pi",
+    "port": 3002
+}
