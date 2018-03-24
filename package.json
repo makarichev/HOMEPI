@@ -8,6 +8,7 @@
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
+  "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
@@ -16,9 +17,6 @@
     "webpack": "^2.2.1"
   },
   "scripts": {
-    "start-server": "node ./server/server.js",
-    "start-unit": "node ./unit/unit.js",
-    "install-board": "node ./deploy/service.install.js board",
-    "uninstall-board": "node ./deploy/service.uninstall.js board"
+    "install-service-pi": "sudo sh ./install/pi/instal.service.cmd"
   }
 }
