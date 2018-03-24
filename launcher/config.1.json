@@ -1,9 +1,0 @@
-{
-    "name": "launcher",
-    "title": "модуль загрузки",
-    "port": 3014,
-    "installed": [
-        "piunit",
-        "configurator"
-    ]
-}
