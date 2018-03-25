@@ -1,0 +1,2 @@
+2018-03-25 08:48:55 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 D:\homepi\node_modules\node-windows\lib\wrapper.js --file D:\homepi\launcher\index.js --log "launcher.service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2018-03-25 08:48:55 - Started 2480
