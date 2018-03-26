@@ -7,23 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <script src="/share/jsmpeg.min.js"></script>
-    <!-- <script src="socket.io/socket.io.js"></script> -->
+    <script src="socket.io/socket.io.js"></script>
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
     
-    <canvas id="canvas"></canvas>
+    <!-- <canvas id="canvas"></canvas> -->
     <!-- <div class="jsmpeg" data-url="ws://localhost:3005/socket.io/?EIO=3&transport=websocket"></div> -->
 
 <script>
 
-    var url = "ws://localhost:3005/socket.io/?transport=websocket"
-    var player = new JSMpeg.Player(url, { canvas: document.getElementById("canvas")});
+    // var url = "ws://localhost:3005/socket.io/?transport=websocket"
+    // var player = new JSMpeg.Player(url, { canvas: document.getElementById("canvas")});
 
-    // var socket = io();
-    // socket.on('message', function(data) {
-    //      //console.log(data)
-    // })
+    var socket = io();
+    socket.on('message', function(data) {
+          console.log(data)
+    })
     
 
 </script>

@@ -24,6 +24,13 @@
             "request": "launch",
             "name": "CamServer",
             "program": "${workspaceRoot}/units/camserver/index.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Control",
+            "program": "${workspaceRoot}/units/control/index.js"
         }
          
         
