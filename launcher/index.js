@@ -128,7 +128,7 @@ function stopUnit(_unit, initClient) {
 
 
 
-var units = getHostUnits();
-units.forEach(function(_unit) {
-    if (_unit.installed) startUnit(_unit, null)
-})
+// var units = getHostUnits();
+// units.forEach(function(_unit) {
+//     if (_unit.installed) startUnit(_unit, null)
+// })

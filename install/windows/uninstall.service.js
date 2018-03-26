@@ -9,14 +9,13 @@ var svc = new Service({
 
 // Listen for the "install" event, which indicates the
 // process is available as a service.
-svc.on('install',function(){
-  console.log("instaled OK")
-  svc.start();
+svc.on('uninstall ',function(){
+  console.log("uninstall OK")
 });
 
 svc.on('error',function(err){
-    console.log("instaled error")
-    console.log(err)
-  });
+  console.log("instaled error")
+  console.log(err)
+});
   
-svc.install();
+svc.uninstall();

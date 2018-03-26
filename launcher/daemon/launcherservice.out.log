@@ -1,3 +1,0 @@
-start модуль конфигурации
-start модуль управления raspberry pi
-unit: "модуль загрузки" start on port 3014

@@ -17,6 +17,13 @@
             "request": "launch",
             "name": "Launcher",
             "program": "${workspaceRoot}/launcher/index.js"
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "CamServer",
+            "program": "${workspaceRoot}/units/camserver/index.js"
         }
          
         
