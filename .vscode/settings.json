@@ -1,0 +1,46 @@
+{
+"deploy": {
+
+    "packages": [
+        {
+            "name": "homepi",
+            "files": ["**/*"],
+            "exclude": [
+                "**/*.local","node_modules/**",".git/**",".vscode/**",".gitignore"
+            ]
+        }
+    ],
+    "targets": [
+        {
+            "type": "sftp",
+            "name": "server",
+            "description": "192.168.1.37",
+            "dir": "d:\\homepi",
+            "host": "192.168.1.37",
+            "user": "администратор",
+            "password": "gB&sa_#"
+        },
+
+        {
+            "type": "sftp",
+            "name": "zita",
+            "description": "192.168.1.200",
+            "dir": "home/pi/homepi",
+            "host": "192.168.1.200",
+            "user": "pi",
+            "password": "raspi"
+        },
+
+        {
+            "type": "sftp",
+            "name": "gita",
+            "description": "192.168.1.201",
+            "dir": "home/pi/homepi",
+            "host": "192.168.1.201",
+            "user": "pi",
+            "password": "raspi"
+        },
+    ]
+}
+
+}
