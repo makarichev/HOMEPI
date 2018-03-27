@@ -13,7 +13,7 @@ function camServer(__path) {
 
     this.io.on("connection", function(socket) {
 
-        console.log("connect")
+        
         var sender = function(data) {
             socket.send(data, {binary: true})
         }
