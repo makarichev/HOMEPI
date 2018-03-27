@@ -1,12 +1,9 @@
-<div>
-    {{$ctrl.config}}
-</div>
-
-
-
-
 <form ng-submit="$ctrl.saveConfig()">
-    <button class="btn btn-primary" type="submit">Сохранить</button>
+    <textarea class="form-control" rows="20" ng-model="$ctrl.formattedConfig">
+    </textarea>
+    <div class="form-control">
+        <button class="btn btn-primary" type="submit">Сохранить</button>
+    </div>
 </form>
 
 </div>

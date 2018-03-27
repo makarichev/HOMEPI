@@ -128,6 +128,7 @@ function stopUnit(_unit, initClient) {
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -135,3 +136,9 @@ var units = getHostUnits();
 units.forEach(function(_unit) {
     if (_unit.installed) startUnit(_unit, null)
 })
+=======
+// var units = getHostUnits();
+// units.forEach(function(_unit) {
+//     if (_unit.installed) startUnit(_unit, null)
+// })
+>>>>>>> 45728cc4d5ea617fb3e8ec287194a9f9f3ad7a4e

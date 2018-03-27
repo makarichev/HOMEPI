@@ -1,9 +1,10 @@
 {
   "dependencies": {
     "angular": "^1.6.9",
+    "angular-json-edit": "^1.0.4",
     "bootstrap": "^4.0.0",
     "express": "^4.16.3",
-    "json-editor": "^0.7.28",
+    "jsmpeg": "^1.0.0",
     "minimist": "^1.2.0",
     "socket.io": "^2.0.4"
   },
@@ -16,9 +17,6 @@
     "webpack": "^2.2.1"
   },
   "scripts": {
-    "start-server": "node ./server/server.js",
-    "start-unit": "node ./unit/unit.js",
-    "install-board": "node ./deploy/service.install.js board",
-    "uninstall-board": "node ./deploy/service.uninstall.js board"
+    "install-service-pi": "sudo sh ./install/pi/install.service.cmd"
   }
 }

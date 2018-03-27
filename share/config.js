@@ -13,6 +13,7 @@
 
                     $ctrl.socket.on("config", function(config) {
                         $ctrl.config = config;
+                        $ctrl.formattedConfig = JSON.stringify(config, null, 4)
                         $scope.$digest();
                     });
 
@@ -21,7 +22,9 @@
                 }
 
                 this.saveConfig = function() {
-                    $ctrl.socket.emit("save", {"name":"configurator.saved","title":"модуль конфигурации","port":3001})                    
+                    var config = JSON.parse($ctrl.formattedConfig)
+                    
+                    $ctrl.socket.emit("save", config)                    
                 }
 
             }]
