@@ -4,6 +4,7 @@
     "port": 3014,
     "installed": [
         "piunit",
-        "configurator"
+        "configurator",
+        "configurator3"
     ]
 }
