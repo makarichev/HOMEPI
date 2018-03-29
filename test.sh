@@ -15,5 +15,5 @@ WantedBy=multi-user.target
 EOL
 
 
-sudo syustemctl enable ${unit}.service
-sudo syustemctl start ${unit}.service
+sudo systemctl enable ${unit}.service
+sudo systemctl start ${unit}.service
