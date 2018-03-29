@@ -1,7 +1,7 @@
 #!/bin/bash
 unit="launcher";
 
-sudo cat > /systemd/system/${unit}.service << EOL
+sudo cat > /etc/systemd/system/${unit}.service << EOL
 [Unit]
 Description=HOMEPI ${unit} service
 After=multi-user.target
