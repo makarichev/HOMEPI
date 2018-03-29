@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ["$#" -eq "0"]
+if [ "$#" -ne 1 ]
 then
     echo "put unit name in argument"
     exit 0
