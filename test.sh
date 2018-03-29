@@ -1,11 +1,15 @@
 #!/bin/bash
-kernel="2.6.39";
-distro="xyz";
+unit="launcher";
 
 cat > FILE.txt << EOL
-line 1, ${kernel}
-line 2,
-line 3, ${distro}
-line 4
-line ...
+[Unit]
+Description=HOMEPI ${unit} service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/node /home/pi/homepi/${unit}/index.js
+
+[Install]
+WantedBy=multi-user.target
 EOL

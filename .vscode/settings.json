@@ -25,7 +25,7 @@
             "type": "sftp",
             "name": "zita",
             "description": "192.168.1.200",
-            "dir": "home/pi/homepi",
+            "dir": "/home/pi/homepi",
             "host": "192.168.1.200",
             "user": "pi",
             "password": "raspi"
