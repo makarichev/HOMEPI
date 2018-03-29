@@ -6,7 +6,7 @@ then
     exit 0
 fi
   
-
+]
 unit=$1
 filename="/home/pi/homepi/units/${unit}/index.js"
 
