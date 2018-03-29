@@ -17,6 +17,6 @@
     "webpack": "^2.2.1"
   },
   "scripts": {
-    "install-service-pi": "sudo bash ./install/pi/install.service.sh"
+    "install-service-pi": "sudo bash ./install/pi/install-service.sh"
   }
 }
