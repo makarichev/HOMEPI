@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ $# -eq 0]
+if [$# -eq 0]
 then
     echo "put unit name in argument"
     exit 0
 fi
   
 
-unit=$1;
+unit=$1
 filename="/home/pi/homepi/units/${unit}/index.js"
 
 if [ -f "$filename" ]
@@ -25,6 +25,7 @@ ExecStart=/usr/bin/node /home/pi/homepi/${unit}/index.js
 [Install]
 WantedBy=multi-user.target
 EOL
+    
     sudo systemctl enable ${unit}.service
     sudo systemctl start ${unit}.service
 
