@@ -29,14 +29,16 @@
         {
             "type": "node",
             "request": "launch",
-<<<<<<< HEAD
-            "name": "Control",
-            "program": "${workspaceRoot}/units/control/index.js"
-=======
             "name": "Test",
             "program": "${workspaceRoot}/units/test/index.js"
->>>>>>> d6cf7b772aaebf19b26ad46d789ea577870681c6
-        }
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Board",
+            "program": "${workspaceRoot}/units/board/bin/www"
+        },
          
         
         
