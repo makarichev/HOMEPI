@@ -17,5 +17,5 @@ setInterval(function() {
 
     client.emit({message:'blablabla'})
     
-}, 10000)
+}, 2000)
     

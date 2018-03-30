@@ -1,15 +1,9 @@
 const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-
 module.exports = {
   entry: {
-    'share/vendors.js': path.join(__dirname, 'share', 'vendorsModule.js'),
-    'share/bundle.js': path.join(__dirname, 'share', 'config.js')
+    "board": __dirname + "/units/board/client/index.js"
   },
-  output: {
-    filename: '[name]',
-    path: path.resolve(__dirname)
-  },
+  output: {filename: __dirname + '/units/[name]/bundle.js'},
   module: {
     rules: [{
       test: /.jsx?$/,
@@ -29,8 +23,6 @@ module.exports = {
   resolve: {
     extensions: ['.json', '.js', '.jsx', '.css']
   },
-
-
   devtool: 'source-map',
   devServer: {
     publicPath: path.join('/dist/')
